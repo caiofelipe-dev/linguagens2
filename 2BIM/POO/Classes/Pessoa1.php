@@ -9,7 +9,7 @@ class Pessoa {
     public $salario;
     
     //Métodos
-    function inserirDados($nom, $cod, $cpf, $idad, $alt, $sal) {
+    function __construct($nom, $cod, $cpf, $idad, $alt, $sal) {
         $this->nome = $nom;
         $this->codigo = $cod;
         $this->cpf = $cpf;
@@ -55,6 +55,8 @@ class Pessoa {
     function alterarCPF() {
         if($this->cpf > 10) {
             $this->cpf *= 3;
+        } else {
+            echo "<font color=red>CPF INVALIDO </font><br>";
         }
     }
 }

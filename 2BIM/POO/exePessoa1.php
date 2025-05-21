@@ -7,11 +7,8 @@
     <body>
         <?php
         include_once "Classes/pessoa1.php";
-        $p1 = new Pessoa;
-        $p2 = new Pessoa;
-        
-        $p1->inserirDados("Caio Felipe", "001", 9944499900, 18, 1.77, 1500);
-        $p2->inserirDados("Ediondo Carionte", "002", 51561671790, 15, 1.6, 2000);
+        $p1 = new Pessoa("Caio Felipe", "001", 9944499900, 18, 1.77, 1500);
+        $p2 = new Pessoa("Ediondo Carionte", "002", 51561671790, 15, 1.6, 2000);
         
         $p1->mostrar();
         $p2->mostrar();

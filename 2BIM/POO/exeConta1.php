@@ -9,11 +9,8 @@
         include_once 'Classes/Pessoa1.php';
         include_once 'Classes/Conta1.php';
         
-        $p1 = new Pessoa();
-        $c1 = new Conta();
-        
-        $p1->inserirDados("Caio Felipe S Moreira", "001", 222, 35, 1.77, 5000);
-        $c1->inserirDados("10/05/2024", "555-9", "9939-1", 15000);
+        $p1 = new Pessoa("Caio Felipe S Moreira", "001", 222, 35, 1.77, 5000);
+        $c1 = new Conta("10/05/2024", "555-9", "9939-1", 15000);
         
         $p1->mostrar();
         
